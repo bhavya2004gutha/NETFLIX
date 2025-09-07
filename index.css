@@ -1,204 +1,185 @@
-
 body {
-    box-sizing: border-box;
-    margin: 0;
+   box-sizing: border-box;
+    margin: 0; 
     padding: 0;
-    position: relative;
-    height: 100%;
-    width: 100%;
+     position: relative;
+      height: 100%;
+       width: 100%; 
+      }
+       
+.background { 
+        background-color: rgba(0, 0, 0, 0.699);
+         width: 100vw; 
+         height: 100vh;
+          z-index: 1; 
+        }
+ .image { 
+          width: 100vw;
+           height: 100vh;
+            z-index: -100;
+             position: absolute; 
+             overflow: hidden;
+              top: 0;
+             }
+ .logo {
+                 position: absolute;
+                  top: 40px;
+                   left: 40px; 
+                   z-index: 10;
+  }
+ .logo { 
+                      width: 200px; 
+                    }
+ .title{ 
+  display: flex; 
+  gap: 15px; 
 }
- 
-.background {
-    background-color: rgba(0, 0, 0, 0.699);
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-}
- 
-.image {
-    width: 100vw;
-    height: 100vh;
-    z-index: -100;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-}
-
-.logo {
-  position: absolute;
-  top: 40px;       
-  left: 40px;      
-  z-index: 10;     
-}
-
-.logo {
-  width: 200px;  
-  
-}
-
-.title{
-  display: flex;
-  gap: 15px;
-
-}
-
-
-.lang-btn,
-.sign-in-btn {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  font-weight: bold;
-  cursor: pointer;
-   margin-top: 40px;
-}
-
-.lang-btn {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: 1px solid white;
-}
-
-.sign-in-btn {
-   
-  background-color: rgb(229, 9, 20);
-  color: white;
-}
-.container{
-    position:absolute;
+ .lang-btn,
+ .sign-in-btn {
+   padding: 8px 16px;
+    border: none;
+     border-radius: 4px;
+      font-weight: bold;
+       cursor: pointer;
+        margin-top: 40px; 
+      }
+ .lang-btn {
+   background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+     border: 1px solid white;
+     }
+ .sign-in-btn {
+   background-color: rgb(229, 9, 20); 
+   color: white; 
+  }
+ .container{
+   position:absolute;
     top:0;
-    display:flex;
-    width:90vw;
-    justify-content: space-between;
-  
+     display:flex;
+      width:90vw;
+       justify-content: space-between;
 }
-
- 
-.input{
-  width: 400px;
+ .input{
+ width: 400px;
   padding: 10px;
-  font-size: 16px;
-  border: none;
-}
+   font-size: 16px;
+    border: none;
+   }
+ .hero {
+   position: absolute;
+    top: 0;
+     left: 0;
+      height: 100vh;
+       width: 100vw;
+        display: flex;
+         align-items: center;
+          justify-content: center;
+           text-align: center;
+            z-index: 5;
+             color: white; 
+             padding: 20px;
+  }
+ .hero-content {
+   max-width: 800px; 
+  }
+   .main-heading h3 { 
+    font-size: 3rem;
+     font-weight: bold; 
+     margin: 0; 
+    } 
+    .sub-heading {
+       font-size: 1.5rem; 
+       margin-top: 1rem;
+       }
+        .tag { 
+          font-size: 1.2rem;
+           margin-top: 1rem;
+           }
+ .input-container { 
   
-.hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 5; 
-  color: white;
-  padding: 20px;
-}
-
-.hero-content {
-  max-width: 800px;
-}
-
-.main-heading h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0;
-}
-
-.sub-heading {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-
-.tag {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-
-.input-container {
-  margin-top: 1.5rem;
-  display: flex;
+  margin-top: 1.5rem; 
+  display: flex; 
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.input {
-  width: 300px;
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-}
-
-.get-started-btn {
-  background-color: #e50914;
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  width:100px;
-}
-
-
-.get-started-btn:hover {
-  background-color: #f40612;
+   justify-content: center;
+    gap: 10px;
+   } 
+   .input {
+     width: 300px; 
+     padding: 12px;
+      font-size: 1rem;
+       border: none;
+        border-radius: 4px; 
+      }
+       .get-started-btn {
+         background-color: #e50914; color:
+          white; padding: 12px 24px;
+           border: none;
+            font-size: 16px;
+             border-radius: 4px; 
+             cursor: pointer;
+              font-weight: bold;
+               width:100px; 
+        }
+ .get-started-btn:hover { 
+  background-color: #f40612; 
   transform: scale(1.05);
-}
-
-
-.trending-section {
+ } 
+ .trending-section { 
   max-width: 100%;
-  overflow-x: hidden;
-  padding:0 20px;
-  width:100;
-  margin:0;
+   overflow-x: hidden;
+    padding:0 20px;
+     width:100vh;
+      margin:0;
+       z-index:1;
+        height:100vh; 
 }
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 32px;
-}
-
-.carousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
-
+ h2 {
+   margin-bottom: 20px; 
+   font-size: 32px;
+   }
+    .carousel {
+       display: flex;
+        gap: 20px; 
+        overflow-x: auto;
+         padding-bottom: 10px;
+         }
 .card {
-  position: relative;
-  min-width: 200px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #111;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-}
-
+   position: relative;
+    min-width: 200px; 
+    flex-shrink: 0;
+     border-radius: 10px;
+      overflow: hidden;
+       background-color: #111; 
+       box-shadow: 0 4px 8px rgba(25
+  
+  
+  
+  5, 255, 255, 0.1); transition: transform 0.3s ease; } 
 .card:hover {
-  transform: scale(1.05);
-}
-
-.card img {
-  width: 100%;
-  display: block;
-  height: auto;
-}
-
-.rank {
-  position: absolute;
+     transform: scale(1.05); } 
+     
+     .card img { 
+      
+    width: 100%;
+     display: block; 
+      height: auto; 
+    }
+    
+  .rank {
+ position: absolute;
   top: 10px;
-  left: 10px;
+  left: 10px;    
   font-size: 48px;
-  font-weight: bold;
-  color: white;
-  -webkit-text-stroke: 2px black;
-  z-index: 2;
-}
+   font-weight: bold; 
+   color: white; 
+   -webkit-text-stroke: 2px black;
+    z-index: 2; 
+  }
+   .info-image {
+     width: 100vw; 
+     height: 100vh;
+      z-index: -100;
+       position: absolute;
+        overflow: hidden;
+         top: 0; 
+        }
